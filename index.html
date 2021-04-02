@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <th>№</th>
+                <th>name</th>
+                <th>age</th>
+                <th>score</th>
+            </tr>
+        </table>
+        <table class="table"></table>
+    </div>
+    <form class="add-box">
+        <input type="text" placeholder="Name" id="nameInput" required>
+        <div class="inputNumber">
+            <input type="number" placeholder="Age" id="ageInput" required>
+            <input type="number" placeholder="Score" id="scoreInput" required>
+        </div>
+        <button type="submit">add</button>
+        <label>
+            Sort by :
+            <select name="select">
+                <option value="1" selected>name</option>
+                <option value="2">age</option>
+                <option value="3">score</option>
+            </select>
+        </label>
+        <label>
+            Sort type :
+            <input type="radio" name="sorting-type" id="sortUp" checked>
+            <img src="img/sort-up.png" alt="sort-up-icon">
+            <input type="radio" name="sorting-type" id="sortDown">
+            <img src="img/sort-down.png" alt="sort-down-icon">
+        </label>
+    </form>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
